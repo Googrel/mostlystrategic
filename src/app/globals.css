@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  margin: 0;
+  background: #fbfbfa;
+  color: #111111;
+  font-family: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+a {
+  color: #111111;
+  text-decoration: none;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.font-display {
+  font-family: var(--font-newsreader), Georgia, serif;
+}
+
+.page {
+  max-width: 46rem;
+}
+
+.page-title {
+  margin-bottom: 24px;
+  color: #111111;
+  font-family: var(--font-newsreader), Georgia, serif;
+  font-size: 34px;
+  font-weight: 500;
+  line-height: 38px;
+  letter-spacing: -0.02em;
+}
+
+@media (min-width: 640px) {
+  .page-title {
+    font-size: 40px;
+    line-height: 44px;
+  }
+}
+
+.section {
+  margin-top: 56px;
+}
+
+.section-label {
+  margin-bottom: 12px;
+  color: #5e5e5e;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0.04em;
+}
+
+.body-copy {
+  color: #5e5e5e;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.body-copy strong {
+  color: #111111;
+  font-weight: 500;
+}
+
+.list-plain {
+  color: #111111;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.list-plain li + li {
+  margin-top: 6px;
+}
+
+.pill-button {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid #e6e6e6;
+  padding: 10px 14px;
+  color: #111111;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.pill-button:hover {
+  background: #f3f3f1;
+  text-decoration: none;
+}
