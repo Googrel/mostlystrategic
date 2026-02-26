@@ -2,6 +2,7 @@
 
 Minimal Next.js + Tailwind website for Mostly Strategic.
 
+
 ## Environment variables
 
 Copy `.env.example` to `.env.local` and set:
