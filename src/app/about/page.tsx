@@ -1,12 +1,12 @@
 export default function AboutPage() {
   return (
-    <article className="page">
-      <h1 className="page-title">About</h1>
-      <div className="body-copy space-y-4">
+    <article className="max-w-3xl space-y-6">
+      <h1 className="text-4xl font-semibold tracking-tight">About</h1>
+      <div className="space-y-4 text-lg leading-relaxed text-neutral-700">
         <p>
-          <strong>I am Relina D&apos;Silva.</strong> I have spent 15+ years building brands and growth
-          systems across hardware, AI, and deep-tech, often in categories where trust is earned
-          slowly and lost quickly.
+          I am Relina D&apos;Silva. I have spent 15+ years building brands and growth systems across
+          hardware, AI, and deep-tech, often in categories where trust is earned slowly and lost
+          quickly.
         </p>
         <p>
           I work best when the problem is real, the constraints are clear, and the ambition is

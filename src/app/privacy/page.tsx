@@ -1,8 +1,8 @@
 export default function PrivacyPage() {
   return (
-    <article className="page">
-      <h1 className="page-title">Privacy</h1>
-      <div className="body-copy space-y-4">
+    <article className="max-w-3xl space-y-6">
+      <h1 className="text-4xl font-semibold tracking-tight">Privacy</h1>
+      <div className="space-y-4 text-neutral-700">
         <p>
           This site only collects information you intentionally submit through the contact form.
         </p>
