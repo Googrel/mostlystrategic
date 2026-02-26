@@ -62,36 +62,40 @@ export function ContactForm() {
       />
 
       <label className="block space-y-2">
-        <span className="section-label block !mb-0">Name</span>
+        <span className="text-sm">Name</span>
         <input
           required
           name="name"
           type="text"
-          className="w-full border border-[#e6e6e6] bg-[#fbfbfa] px-3 py-2 text-base text-[#111111] outline-none focus:border-[#111111]"
+          className="w-full border border-neutral-300 px-3 py-2 outline-none focus:border-neutral-900"
         />
       </label>
 
       <label className="block space-y-2">
-        <span className="section-label block !mb-0">Email</span>
+        <span className="text-sm">Email</span>
         <input
           required
           name="email"
           type="email"
-          className="w-full border border-[#e6e6e6] bg-[#fbfbfa] px-3 py-2 text-base text-[#111111] outline-none focus:border-[#111111]"
+          className="w-full border border-neutral-300 px-3 py-2 outline-none focus:border-neutral-900"
         />
       </label>
 
       <label className="block space-y-2">
-        <span className="section-label block !mb-0">Message</span>
+        <span className="text-sm">Message</span>
         <textarea
           required
           name="message"
           rows={6}
-          className="w-full border border-[#e6e6e6] bg-[#fbfbfa] px-3 py-2 text-base text-[#111111] outline-none focus:border-[#111111]"
+          className="w-full border border-neutral-300 px-3 py-2 outline-none focus:border-neutral-900"
         />
       </label>
 
-      <button type="submit" disabled={isSubmitting} className="pill-button disabled:cursor-not-allowed disabled:opacity-60">
+      <button
+        type="submit"
+        disabled={isSubmitting}
+        className="inline-flex rounded border border-neutral-900 px-5 py-2 text-sm no-underline transition hover:bg-neutral-900 hover:text-white disabled:cursor-not-allowed disabled:opacity-60"
+      >
         {isSubmitting ? "Sending..." : "Send"}
       </button>
 

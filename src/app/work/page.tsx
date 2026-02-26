@@ -9,10 +9,10 @@ const projects = [
 
 export default function WorkPage() {
   return (
-    <section className="page">
-      <h1 className="page-title">Work</h1>
-      <p className="section-label">Selected work</p>
-      <ul className="list-plain">
+    <section className="max-w-3xl space-y-6">
+      <h1 className="text-4xl font-semibold tracking-tight">Work</h1>
+      <p className="text-lg leading-relaxed text-neutral-700">Selected work:</p>
+      <ul className="space-y-2 text-neutral-700">
         {projects.map((project) => (
           <li key={project}>{project}</li>
         ))}

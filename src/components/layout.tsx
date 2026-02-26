@@ -13,17 +13,14 @@ export function SiteLayout({ children }: { children: ReactNode }) {
   const year = new Date().getFullYear();
 
   return (
-    <div className="mx-auto flex min-h-screen w-full max-w-[46rem] flex-col px-6 sm:px-8">
-      <header className="flex flex-col gap-6 pb-[72px] pt-10 sm:flex-row sm:items-start sm:justify-between">
-        <Link
-          href="/"
-          className="font-display text-base font-medium leading-[22px] tracking-[-0.01em] text-[#111111]"
-        >
+    <div className="mx-auto flex min-h-screen w-full max-w-5xl flex-col px-6 py-10 md:px-10 md:py-14">
+      <header className="mb-20 flex flex-col gap-8 md:mb-28 md:flex-row md:items-start md:justify-between">
+        <Link href="/" className="text-xl font-semibold tracking-tight no-underline">
           Mostly Strategic
         </Link>
-        <nav aria-label="Main navigation" className="flex flex-wrap gap-x-5 gap-y-1 text-sm text-[#111111]">
+        <nav aria-label="Main navigation" className="flex flex-wrap gap-x-6 gap-y-2 text-sm">
           {navItems.map((item) => (
-            <Link key={item.href} href={item.href}>
+            <Link key={item.href} href={item.href} className="no-underline hover:underline">
               {item.label}
             </Link>
           ))}
@@ -32,7 +29,7 @@ export function SiteLayout({ children }: { children: ReactNode }) {
 
       <main className="flex-1">{children}</main>
 
-      <footer className="mt-16 border-t border-[#e6e6e6] pt-24 text-sm leading-6 text-[#5e5e5e]">
+      <footer className="mt-20 space-y-1 border-t border-neutral-200 pt-8 text-sm text-neutral-600 md:mt-28">
         <p>Mostly Strategic Consulting</p>
         <p>Bengaluru, India</p>
         <p>© {year}</p>

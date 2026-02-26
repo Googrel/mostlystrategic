@@ -1,19 +1,6 @@
 import type { Metadata } from "next";
-import { Inter, Newsreader } from "next/font/google";
 import "./globals.css";
 import { SiteLayout } from "@/components/layout";
-
-const inter = Inter({
-  subsets: ["latin"],
-  weight: ["400", "500"],
-  variable: "--font-inter"
-});
-
-const newsreader = Newsreader({
-  subsets: ["latin"],
-  weight: ["400", "500"],
-  variable: "--font-newsreader"
-});
 
 export const metadata: Metadata = {
   metadataBase: process.env.NEXT_PUBLIC_SITE_URL
@@ -29,7 +16,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} ${newsreader.variable}`}>
+    <html lang="en">
       <body>
         <SiteLayout>{children}</SiteLayout>
       </body>
